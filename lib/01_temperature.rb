@@ -1,25 +1,10 @@
-def ftoc (farenheit)
-    
-        celsius = (farenheit - 32) * (5/9)
-        if
-            farenheit == 32
-        return celsius == 0
-        if
-            farenheit == 212
-        return celsius == 100
-        if
-            farenheit == 98.6
-        return celsius == 37
-        if
-            farenheit == 68
-        return celsius == 20
-        end
+#formules pour convertir / formulas to convert : farenheit <=> Celsius
+#pas besoin de se compliquer la vie
+
+def ftoc(fahrenheit)
+    (fahrenheit - 32) * (5.0 / 9.0)
 end
 
 def ctof (celsius)
-    while 
-        
-        farenheit = (celsius * 9)/5 + 32
-        return farenheit.to_f
-    end
+    ((celsius * 9.0) / 5.0) + 32
 end
