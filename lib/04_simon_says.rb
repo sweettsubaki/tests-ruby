@@ -29,7 +29,7 @@ end
 #sauvegardant la base. Est-ce que la liste nommée word contient des mots appartenant à no need ? si oui on les garde en 
 #minuscule, si non on les capitalise. Puis on rejoint le tout ensemble
 def titleize(string)
-    string.capitalize 
+    string.capitalize!
     no_need = ["and", "the"]
     string.split(" ").map {|word| no_need.include?(word) ? word : word.capitalize }.join(" ")
 end
